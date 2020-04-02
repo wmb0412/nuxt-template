@@ -1,0 +1,34 @@
+{
+  "name": "myNuxt",
+  "version": "1.0.0",
+  "description": "My remarkable Nuxt.js project",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate",
+    "new:page": "node ./scripts/page-generator",
+    "new:comp": "node ./scripts/component-generator"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.9.7",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "nuxt": "^2.0.0",
+    "vant": "^2.5.9"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "node-sass": "^4.13.1",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^8.0.2"
+  },
+  "config": {
+    "nuxt": {
+      "host": "192.168.68.183",
+      "port": "2000"
+    }
+  }
+}
